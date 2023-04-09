@@ -18,7 +18,7 @@ def customer_expected(filename):
             print(f"{customer_num}, {customer_name} paid ${amount_paid:.2f}, they owed {amount_owed:.2f}. They underpaid by ${difference:.2f}.")
         elif amount_owed < amount_paid:
             difference = amount_paid - amount_owed
-            print(f"{customer_num}, {customer_name} paid ${amount_paid:.2f}, they owed {amount_owed:.2f}. They overpaid by ${difference:.2f}.")
+            print(f"Customer {customer_num}, {customer_name} paid ${amount_paid:.2f}, they owed {amount_owed:.2f}. They overpaid by ${difference:.2f}.")
         
 
 customer_expected("customer-orders.txt")
